@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLC GROUP - Đầu Tư Và Quan Hệ Quốc Tế</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+        }
+        
+        .hero-pattern {
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-sky-600">GLC GROUP</h1>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="text-sky-600 hover:text-sky-700 font-medium transition">Trang chủ</a>
+                        <a href="#about" class="text-gray-700 hover:text-sky-600 font-medium transition">Giới thiệu</a>
+                        <a href="#services" class="text-gray-700 hover:text-sky-600 font-medium transition">Dịch vụ</a>
+                        <a href="#international" class="text-gray-700 hover:text-sky-600 font-medium transition">Quan hệ quốc tế</a>
+                        <a href="#contact" class="text-gray-700 hover:text-sky-600 font-medium transition">Liên hệ</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-sky-600">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-sky-600 font-medium">Trang chủ</a>
+                <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-sky-600">Giới thiệu</a>
+                <a href="#services" class="block px-3 py-2 text-gray-700 hover:text-sky-600">Dịch vụ</a>
+                <a href="#international" class="block px-3 py-2 text-gray-700 hover:text-sky-600">Quan hệ quốc tế</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-sky-600">Liên hệ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg hero-pattern pt-32 pb-20 md:pt-40 md:pb-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center animate-fade-in">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                    GLC GROUP
+                </h1>
+                <p class="text-xl md:text-2xl text-sky-100 mb-4">
+                    Đầu Tư Và Quan Hệ Quốc Tế
+                </p>
+                <p class="text-lg md:text-xl text-white/90 mb-8 max-w-3xl mx-auto">
+                    Công ty cổ phần chuyên về đầu tư và phát triển quan hệ quốc tế, 
+                    mang đến những giải pháp đầu tư hiệu quả và bền vững
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#contact" class="bg-white text-sky-600 px-8 py-3 rounded-lg font-semibold hover:bg-sky-50 transition shadow-lg">
+                        Liên hệ ngay
+                    </a>
+                    <a href="#about" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition">
+                        Tìm hiểu thêm
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Về Chúng Tôi</h2>
+                <div class="w-24 h-1 bg-sky-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Công Ty Cổ Phần Đầu Tư Và Quan Hệ Quốc Tế GLC GROUP</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        GLC GROUP là một công ty cổ phần uy tín, được thành lập vào năm 2019, 
+                        chuyên hoạt động trong lĩnh vực đầu tư và phát triển quan hệ quốc tế. 
+                        Với vốn điều lệ 5 tỷ đồng, chúng tôi cam kết mang đến những giải pháp 
+                        đầu tư chất lượng cao và bền vững.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Chúng tôi tập trung vào việc xây dựng và phát triển các mối quan hệ 
+                        đối tác quốc tế, tạo cơ hội đầu tư cho các doanh nghiệp trong và ngoài nước, 
+                        góp phần thúc đẩy sự phát triển kinh tế bền vững.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="bg-sky-50 p-6 rounded-lg">
+                            <div class="text-3xl font-bold text-sky-600 mb-2">2019</div>
+                            <div class="text-gray-600">Năm thành lập</div>
+                        </div>
+                        <div class="bg-sky-50 p-6 rounded-lg">
+                            <div class="text-3xl font-bold text-sky-600 mb-2">5 Tỷ</div>
+                            <div class="text-gray-600">Vốn điều lệ</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-sky-100 to-sky-200 p-8 rounded-2xl">
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-sky-600 text-white p-3 rounded-lg mr-4">
+                                <i class="fas fa-building text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Mã số doanh nghiệp</h4>
+                                <p class="text-gray-600">0108637108</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-sky-600 text-white p-3 rounded-lg mr-4">
+                                <i class="fas fa-map-marker-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Địa chỉ</h4>
+                                <p class="text-gray-600">Số 44, phố Tân Xa, Xa La, Phường Phúc La, Quận Hà Đông, Hà Nội</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-sky-600 text-white p-3 rounded-lg mr-4">
+                                <i class="fas fa-phone text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Điện thoại</h4>
+                                <p class="text-gray-600">+84589500565</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-sky-600 text-white p-3 rounded-lg mr-4">
+                                <i class="fas fa-user-tie text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Người đại diện</h4>
+                                <p class="text-gray-600">NGUYỄN THANH BÌNH - Chủ tịch HĐQT</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-sky-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Dịch Vụ Của Chúng Tôi</h2>
+                <div class="w-24 h-1 bg-sky-600 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                    Chúng tôi cung cấp các dịch vụ chuyên nghiệp trong lĩnh vực đầu tư và quan hệ quốc tế
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover">
+                    <div class="bg-sky-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-globe-americas text-sky-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Đầu Tư Quốc Tế</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Tư vấn và hỗ trợ các dự án đầu tư quốc tế, kết nối các nhà đầu tư 
+                        với các cơ hội kinh doanh tiềm năng trên toàn cầu.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover">
+                    <div class="bg-sky-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-handshake text-sky-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Quan Hệ Đối Tác</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Xây dựng và phát triển mạng lưới đối tác quốc tế, tạo cơ hội hợp tác 
+                        kinh doanh giữa các doanh nghiệp trong và ngoài nước.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover">
+                    <div class="bg-sky-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-sky-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Tư Vấn Đầu Tư</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Cung cấp dịch vụ tư vấn đầu tư chuyên nghiệp, phân tích thị trường 
+                        và đưa ra các giải pháp đầu tư hiệu quả và bền vững.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover">
+                    <div class="bg-sky-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-briefcase text-sky-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Bán Buôn Vật Liệu</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Chuyên cung cấp vật liệu và thiết bị lắp đặt trong xây dựng với 
+                        chất lượng cao và giá cả cạnh tranh.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover">
+                    <div class="bg-sky-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-file-contract text-sky-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Dịch Vụ Pháp Lý</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Hỗ trợ các thủ tục pháp lý liên quan đến đầu tư và kinh doanh quốc tế, 
+                        đảm bảo tuân thủ đầy đủ các quy định hiện hành.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg card-hover">
+                    <div class="bg-sky-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-sky-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Phát Triển Kinh Doanh</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Hỗ trợ các doanh nghiệp mở rộng quy mô kinh doanh, phát triển thị trường 
+                        và tăng cường năng lực cạnh tranh.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- International Relations Section -->
+    <section id="international" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Quan Hệ Quốc Tế</h2>
+                <div class="w-24 h-1 bg-sky-600 mx-auto"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                    Chúng tôi tự hào về mạng lưới đối tác quốc tế rộng khắp, kết nối Việt Nam với thế giới
+                </p>
+            </div>
+
+            <!-- Image Gallery Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <!-- Image 1: International Business -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg card-hover">
+                    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80" 
+                         alt="International Business Meeting" 
+                         class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-sky-900/80 to-transparent flex items-end">
+                        <div class="p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Hợp Tác Kinh Doanh</h3>
+                            <p class="text-sky-100">Kết nối doanh nghiệp toàn cầu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 2: Global Network -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg card-hover">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80" 
+                         alt="Global Network" 
+                         class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-sky-900/80 to-transparent flex items-end">
+                        <div class="p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Mạng Lưới Toàn Cầu</h3>
+                            <p class="text-sky-100">Đối tác tại nhiều quốc gia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 3: International Trade -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg card-hover">
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80" 
+                         alt="International Trade" 
+                         class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-sky-900/80 to-transparent flex items-end">
+                        <div class="p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Thương Mại Quốc Tế</h3>
+                            <p class="text-sky-100">Xuất nhập khẩu toàn cầu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 4: Partnership -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg card-hover">
+                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80" 
+                         alt="Partnership" 
+                         class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-sky-900/80 to-transparent flex items-end">
+                        <div class="p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Đối Tác Chiến Lược</h3>
+                            <p class="text-sky-100">Hợp tác lâu dài và bền vững</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 5: Global Investment -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg card-hover">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80" 
+                         alt="Global Investment" 
+                         class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-sky-900/80 to-transparent flex items-end">
+                        <div class="p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Đầu Tư Quốc Tế</h3>
+                            <p class="text-sky-100">Cơ hội đầu tư đa dạng</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 6: World Map -->
+                <div class="relative group overflow-hidden rounded-xl shadow-lg card-hover">
+                    <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=800&q=80" 
+                         alt="World Map" 
+                         class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-sky-900/80 to-transparent flex items-end">
+                        <div class="p-6 text-white">
+                            <h3 class="text-xl font-bold mb-2">Phạm Vi Toàn Cầu</h3>
+                            <p class="text-sky-100">Hiện diện tại nhiều thị trường</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Partner Countries/Regions -->
+            <div class="bg-gradient-to-r from-sky-50 to-sky-100 rounded-2xl p-8 md:p-12">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Đối Tác Quốc Tế</h3>
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        Chúng tôi tự hào có mạng lưới đối tác rộng khắp tại các khu vực và quốc gia trên thế giới
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                    <div class="bg-white p-6 rounded-lg text-center shadow-md hover:shadow-lg transition">
+                        <div class="text-4xl mb-3">🇻🇳</div>
+                        <div class="font-semibold text-gray-900">Việt Nam</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg text-center shadow-md hover:shadow-lg transition">
+                        <div class="text-4xl mb-3">🇸🇬</div>
+                        <div class="font-semibold text-gray-900">Singapore</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg text-center shadow-md hover:shadow-lg transition">
+                        <div class="text-4xl mb-3">🇯🇵</div>
+                        <div class="font-semibold text-gray-900">Nhật Bản</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg text-center shadow-md hover:shadow-lg transition">
+                        <div class="text-4xl mb-3">🇰🇷</div>
+                        <div class="font-semibold text-gray-900">Hàn Quốc</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg text-center shadow-md hover:shadow-lg transition">
+                        <div class="text-4xl mb-3">🇨🇳</div>
+                        <div class="font-semibold text-gray-900">Trung Quốc</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg text-center shadow-md hover:shadow-lg transition">
+                        <div class="text-4xl mb-3">🇺🇸</div>
+                        <div class="font-semibold text-gray-900">Hoa Kỳ</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg text-center shadow-md hover:shadow-lg transition">
+                        <div class="text-4xl mb-3">🇪🇺</div>
+                        <div class="font-semibold text-gray-900">Châu Âu</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg text-center shadow-md hover:shadow-lg transition">
+                        <div class="text-4xl mb-3">🇦🇺</div>
+                        <div class="font-semibold text-gray-900">Australia</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg text-center shadow-md hover:shadow-lg transition">
+                        <div class="text-4xl mb-3">🇹🇭</div>
+                        <div class="font-semibold text-gray-900">Thái Lan</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg text-center shadow-md hover:shadow-lg transition">
+                        <div class="text-4xl mb-3">🇲🇾</div>
+                        <div class="font-semibold text-gray-900">Malaysia</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg text-center shadow-md hover:shadow-lg transition">
+                        <div class="text-4xl mb-3">🇮🇩</div>
+                        <div class="font-semibold text-gray-900">Indonesia</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg text-center shadow-md hover:shadow-lg transition">
+                        <div class="text-4xl mb-3">🌏</div>
+                        <div class="font-semibold text-gray-900">Và nhiều hơn nữa</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Statistics -->
+            <div class="grid md:grid-cols-4 gap-6 mt-12">
+                <div class="bg-sky-600 text-white p-8 rounded-xl text-center shadow-lg">
+                    <div class="text-4xl font-bold mb-2">50+</div>
+                    <div class="text-sky-100">Đối tác quốc tế</div>
+                </div>
+                <div class="bg-sky-500 text-white p-8 rounded-xl text-center shadow-lg">
+                    <div class="text-4xl font-bold mb-2">30+</div>
+                    <div class="text-sky-100">Quốc gia</div>
+                </div>
+                <div class="bg-sky-600 text-white p-8 rounded-xl text-center shadow-lg">
+                    <div class="text-4xl font-bold mb-2">100+</div>
+                    <div class="text-sky-100">Dự án thành công</div>
+                </div>
+                <div class="bg-sky-500 text-white p-8 rounded-xl text-center shadow-lg">
+                    <div class="text-4xl font-bold mb-2">15+</div>
+                    <div class="text-sky-100">Năm kinh nghiệm</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Liên Hệ Với Chúng Tôi</h2>
+                <div class="w-24 h-1 bg-sky-600 mx-auto"></div>
+                <p class="text-gray-600 mt-4">
+                    Hãy liên hệ với chúng tôi để được tư vấn và hỗ trợ tốt nhất
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-gradient-to-br from-sky-600 to-sky-700 text-white p-10 rounded-2xl">
+                    <h3 class="text-2xl font-bold mb-6">Thông Tin Liên Hệ</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-building text-2xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold mb-1">Công ty</h4>
+                                <p class="text-sky-100">CÔNG TY CỔ PHẦN ĐẦU TƯ VÀ QUAN HỆ QUỐC TẾ GLC GROUP</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-2xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold mb-1">Địa chỉ</h4>
+                                <p class="text-sky-100">Số 44, phố Tân Xa, Xa La, Phường Phúc La, Quận Hà Đông, Hà Nội, Việt Nam</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone text-2xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold mb-1">Điện thoại</h4>
+                                <p class="text-sky-100">+84589500565</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-2xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold mb-1">Email</h4>
+                                <p class="text-sky-100">1984phamlong@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8 pt-8 border-t border-sky-500">
+                        <h4 class="font-semibold mb-4">Theo dõi chúng tôi</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-white/20 hover:bg-white/30 p-3 rounded-lg transition">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="bg-white/20 hover:bg-white/30 p-3 rounded-lg transition">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="bg-white/20 hover:bg-white/30 p-3 rounded-lg transition">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-10 rounded-2xl">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Gửi Tin Nhắn</h3>
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Họ và tên</label>
+                            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-600 focus:border-transparent outline-none transition" placeholder="Nhập họ và tên của bạn">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-600 focus:border-transparent outline-none transition" placeholder="your.email@example.com">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Số điện thoại</label>
+                            <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-600 focus:border-transparent outline-none transition" placeholder="0123456789">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2">Tin nhắn</label>
+                            <textarea rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-600 focus:border-transparent outline-none transition" placeholder="Nhập tin nhắn của bạn..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-sky-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-sky-700 transition shadow-lg">
+                            Gửi tin nhắn
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-sky-400 mb-4">GLC GROUP</h3>
+                    <p class="text-gray-400">
+                        Công ty cổ phần đầu tư và quan hệ quốc tế hàng đầu tại Việt Nam
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Liên kết nhanh</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#home" class="hover:text-sky-400 transition">Trang chủ</a></li>
+                        <li><a href="#about" class="hover:text-sky-400 transition">Giới thiệu</a></li>
+                        <li><a href="#services" class="hover:text-sky-400 transition">Dịch vụ</a></li>
+                        <li><a href="#international" class="hover:text-sky-400 transition">Quan hệ quốc tế</a></li>
+                        <li><a href="#contact" class="hover:text-sky-400 transition">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Dịch vụ</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-sky-400 transition">Đầu tư quốc tế</a></li>
+                        <li><a href="#" class="hover:text-sky-400 transition">Quan hệ đối tác</a></li>
+                        <li><a href="#" class="hover:text-sky-400 transition">Tư vấn đầu tư</a></li>
+                        <li><a href="#" class="hover:text-sky-400 transition">Bán buôn vật liệu</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Thông tin</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Mã số: 0108637108</li>
+                        <li>Thành lập: 2019</li>
+                        <li>Vốn điều lệ: 5 tỷ đồng</li>
+                        <li>Trạng thái: Đang hoạt động</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 GLC GROUP. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Form submission
+        const form = document.querySelector('form');
+        if (form) {
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi sớm nhất có thể.');
+                form.reset();
+            });
+        }
+    </script>
+</body>
+</html>
